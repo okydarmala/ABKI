@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="Aplikasi Pencarian kerja berbasis kemampuan anak bangsa">
+      <meta name="author" content="nephthys media">
+      <title>Asosiasi Bursa Kerja Indonesia</title>
+      <link rel="shortcut icon" type="image/x-icon" href="assets/LOGO2.svg">
+      <link rel="stylesheet" href="Bootstrap/dist/css/Bootstrap.css">
+      <link rel="stylesheet" href="Bootstrap/dist/css/preloader.css">
+      <script src="https://kit.fontawesome.com/48fd994174.js" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+      <script>
+         $(document).ready(function() {
+            $(".preloader").fadeOut();
+         })
+      </script>
+   </head>
+   <body>
+      <div class="preloader">
+         <div class="loading"><img src="assets/loader.gif" width="95"></div>
+      </div>
+      <nav class="navbar navbar-expand-lg navbar-light" aria-label="Offcanvas navbar large">
+         <div class="container"><a class="navbar-brand d-flex fs-4 text-black mb-0 " href="#"><img src="assets/LOGO.svg" alt="" class="me-3" width="80" height="64"></a><button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" data-mdb-toggle="collapse" aria-expanded="false"><i class="fas fa-bars"></i></button>
+            <div class="offcanvas offcanvas-end text-black bg-white" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+               <div class="offcanvas-header border-bottom"><img src="assets/logo canvasoff.svg" alt="" class="me-0" width="130" height="84"><button type="button" class="btn-close btn-close-dark" data-bs-dismiss="offcanvas" aria-label="Close"></button></div>
+               <div class="offcanvas-body">
+                  <ul class="navbar-nav  justify-content-end flex-grow-1 pe-3 ">
+                     <li class="nav-item"><a class="nav-link" aria-current="page" href="#home">Home</a></li>
+                     <li class="nav-item"><a class="nav-link" href="#hanging-icons">Services</a></li>
+                     <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                     <li class="nav-item"><a class="nav-link" href="#FAQs">FAQs</a></li>
+                     <li class="nav-item"><a class="nav-link" href="#ContactUs">Contact Us</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </nav>
+      <div id='home' class="container col-xxl-8 px-4 py-5">
+         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="user-select-none col-10 col-sm-8 col-lg-6"><img src="assets/banner.svg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="1000" height="800" loading="lazy"></div>
+            <div class="col-lg-6">
+               <h1 class="user-select-none display-5 fw-bold lh-1 mb-3 py-5">Building something different</h1>
+               <p class="user-select-none lead lh-1 mb-3">An application designed to introduce the capabilities of workers, which is in accordance with the needs of today's industry 4.0.</p>
+               <div class="d-grid gap-2 d-md-flex justify-content-md-start"><button type="button" class="btn btn-primary btn-lg px-4 me-md-2" data-bs-toggle="modal" data-bs-target="#modalSignin">Employee</button><button type="button" class="btn btn-outline-secondary btn-lg px-4" data-bs-toggle="modal" data-bs-target="#modalSignin2">Company</button></div>
+            </div>
+         </div>
+      </div>
+      <!-- register User Pekerja -->
+      <div class="modal fade" aria-labelledby="modalSigninLabel" aria-hidden="true" tabindex="-1" role="dialog" id="modalSignin">
+         <div class="modal-dialog" role="document">
+            <div class="modal-content rounded-4 shadow">
+               <div class="modal-header p-5 pb-4 border-bottom-0">
+                  <h2 class="fw-bold mb-0">Sign up for free</h2>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+               <div class="modal-body p-5 pt-0">
+                  <form class="">
+                     <div class="form-floating mb-3">
+                        <input type="email" class="form-control rounded-3" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Email address</label>
+                     </div>
+                     <div class="form-floating mb-3">
+                        <input type="password" class="form-control rounded-3" id="floatingPassword" placeholder="Password">
+                        <label for="floatingPassword">Password</label>
+                     </div>
+                     <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Sign up</button>
+                     <small class="text-muted">By clicking Sign up, you agree to the terms of use.</small>
+                     <hr class="my-4">
+                     <h2 class="fs-5 fw-bold mb-3">Please Use another method to Register</h2>
+                     <button class="w-100 py-2 mb-2 btn btn-outline-dark rounded-3" type="submit">
+                        <i class="fa-brands fa-linkedin">&nbsp;Sign up with linkedin</i>
+                     </button>
+                     <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
+                        <i class="fa-brands fa-facebook-square">&nbsp;Sign up with facebook</i>
+                     </button>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- register perusahaan -->
+      <div class="modal fade" aria-labelledby="modalSigninLabel" aria-hidden="true" tabindex="-1" role="dialog" id="modalSignin2">
+         <div class="modal-dialog" role="document">
+            <div class="modal-content rounded-4 shadow">
+               <div class="modal-header p-5 pb-4 border-bottom-0">
+                  <h2 class="fw-bold mb-0">Sign up for free</h2>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+               <div class="modal-body p-5 pt-0">
+                  <form class="">
+                     <div class="form-floating mb-3">
+                        <input type="email" class="form-control rounded-3" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Email address</label>
+                     </div>
+                     <div class="form-floating mb-3">
+                        <input type="password" class="form-control rounded-3" id="floatingPassword" placeholder="Password">
+                        <label for="floatingPassword">Password</label>
+                     </div>
+                     <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Sign up</button>
+                     <small class="text-muted">By clicking Sign up, you agree to the terms of use.</small>
+                     <hr class="my-4">
+                     <h2 class="fs-5 fw-bold mb-3">Please Use another method to Register</h2>
+                     <button class="w-100 py-2 mb-2 btn btn-outline-dark rounded-3" type="submit">
+                        <i class="fa-brands fa-linkedin">&nbsp;Sign up with linkedin</i>
+                     </button>
+                     <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
+                        <i class="fa-brands fa-facebook-square">&nbsp;Sign up with facebook</i>
+                     </button>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- search form -->
+      <div class="modal fade" aria-labelledby="modalSigninLabel" aria-hidden="true" tabindex="-1" role="dialog" id="modalSignin4">
+         <div class="modal-dialog" role="document">
+            <div class="modal-content rounded-4 shadow">
+               <div class="modal-header p-5 pb-4 border-bottom-0">
+                  <h2 class="fw-bold mb-0">Please find a suitable job</h2>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+               <div class="modal-body p-5 pt-0">
+                  <form class="">
+                     <div class="form-floating mb-3">
+                        <input type="text" class="form-control rounded-3" id="floatingInput" placeholder="Job">
+                        <label for="floatingInput">Job Title or company </label>
+                     </div>
+                     <div class="form-floating mb-3">
+                        <input type="text" class="form-control rounded-3" id="floatingInput" placeholder="city">
+                        <label for="floatingInput">city or towns</label>
+                     </div>
+                     <button class="fa-light fa-magnifying-glass w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Search</button>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- login form -->
+      <div class="modal fade" aria-labelledby="modalSigninLabel" aria-hidden="true" tabindex="-1" role="dialog" id="modalSignin3">
+         <div class="modal-dialog" role="document">
+            <div class="modal-content rounded-4 shadow">
+               <div class="modal-header p-5 pb-4 border-bottom-0">
+                  <form class="text-center form-signin w-100 m-auto">
+                     <img src="assets/ABKI Logo.svg" alt="" width="102" height="77">
+                     <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+                     <div class="form-floating">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Email address</label>
+                     </div>
+                     <div class="form-floating">
+                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                        <label for="floatingPassword">Password</label>
+                     </div>
+                     <div class="checkbox mb-3">
+                        <label>
+                           <input type="checkbox" value="remember-me"> Remember me </label>
+                     </div>
+                     <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+                     <p class="mt-5 mb-3 text-muted">&copy;2022</p>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- feauture -->
+      <div class="container px-4 py-5" id="hanging-icons">
+         <h2 class="pb-2 border-bottom">Hanging icons</h2>
+         <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+            <div class="col d-flex align-items-start">
+               <div class="icon-square bg-light text-dark d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                  <svg class="bi" width="1em" height="1em">
+                     <use xlink:href="#toggles2" />
+                  </svg>
+               </div>
+               <div>
+                  <h2>Featured title</h2>
+                  <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+                  <a href="#" class="btn btn-primary"> Primary button </a>
+               </div>
+            </div>
+            <div class="col d-flex align-items-start">
+               <div class="icon-square bg-light text-dark d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                  <svg class="bi" width="1em" height="1em">
+                     <use xlink:href="#cpu-fill" />
+                  </svg>
+               </div>
+               <div>
+                  <h2>Featured title</h2>
+                  <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+                  <a href="#" class="btn btn-primary"> Primary button </a>
+               </div>
+            </div>
+            <div class="col d-flex align-items-start">
+               <div class="icon-square bg-light text-dark d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                  <svg class="bi" width="1em" height="1em">
+                     <use xlink:href="#tools" />
+                  </svg>
+               </div>
+               <div>
+                  <h2>Featured title</h2>
+                  <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+                  <a href="#" class="btn btn-primary"> Primary button </a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--FAQS  -->
+      <div class="container" id="FAQs">
+         <h2 class="pb-2 border-bottom">FAQs</h2>
+         <div class="row py-5 ">
+            <div class="col">
+               <img src="assets/faq.svg" class="col" alt="Bootstrap Themes" width="580" height="300" loading="lazy">
+            </div>
+            <div class="col">
+               <div class="accordion accordion-flush" id="accordionFlushExample">
+                  <div class="accordion-item">
+                     <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne"> Accordion Item #1 </button>
+                     </h2>
+                     <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body. </div>
+                     </div>
+                  </div>
+                  <div class="accordion-item">
+                     <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo"> Accordion Item #2 </button>
+                     </h2>
+                     <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content. </div>
+                     </div>
+                  </div>
+                  <div class="accordion-item">
+                     <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree"> Accordion Item #3 </button>
+                     </h2>
+                     <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application. </div>
+                     </div>
+                  </div>
+                  <div class="accordion-item">
+                     <h2 class="accordion-header" id="flush-headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour"> Accordion Item #4 </button>
+                     </h2>
+                     <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application. </div>
+                     </div>
+                  </div>
+                  <div class="accordion-item">
+                     <h2 class="accordion-header" id="flush-headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive"> Accordion Item #5 </button>
+                     </h2>
+                     <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application. </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--Contact Us  -->
+      <div class="container" id="ContactUs">
+         <h2 class="pb-2 border-bottom">Contact Us</h2>
+         <div class="row py-5 ">
+            <div id="map-container-google-3" class="z-depth-1-half map-container-3">
+               <iframe src="https://maps.google.com/maps?q=pondok%20labu%20jakarta%20selatan&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+            <div class="row py-2">
+               <div class="col-12">
+                  <h2 class="contact-title">Get in Touch</h2>
+               </div>
+               <div class="col-md-8">
+                  <form class="form-label contact_form" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
+                     <div class="row">
+                        <div class="col-12 py-2">
+                           <div class="form-label">
+                              <textarea class="form-control w-100" name="message" id="message" cols="30" rows="9" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Message'" placeholder=" Enter Message"></textarea>
+                           </div>
+                        </div>
+                        <div class="col-sm-6 py-2">
+                           <div class="form-label">
+                              <input class="form-control valid" name="name" id="name" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" placeholder="Enter your name">
+                           </div>
+                        </div>
+                        <div class="col-sm-6 py-2">
+                           <div class="form-label">
+                              <input class="form-control valid" name="email" id="email" type="email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" placeholder="Email">
+                           </div>
+                        </div>
+                        <div class="col-12 py-2">
+                           <div class="form-label">
+                              <input class="form-control" name="subject" id="subject" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Subject'" placeholder="Enter Subject">
+                           </div>
+                        </div>
+                        <div class="form-label py-2">
+                           <button type="submit" class="btn btn-primary col-12">Send</button>
+                        </div>
+                     </div>
+               </div>
+               <div class="col-md-4">
+                  <div class="col-12 d-flex align-items-start">
+                     <div class="text-dark d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                        <i class="fa-solid fa-building-circle-check"></i>
+                     </div>
+                     <div>
+                        <h4>Graha Atika Building</h4>
+                        <p>Jl. Warung Buncit Raya No.7, RT.2/RW.5, Kalibata, Kec. Pancoran, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12740.</p>
+                     </div>
+                  </div>
+                  <div class="col-12 d-flex align-items-start">
+                     <div class="text-dark d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                        <i class="fa-solid fa-phone"></i>
+                     </div>
+                     <div>
+                        <h4>+62 812 8557 8255</h4>
+                        <p>Monday - Friday 9am To 5pm</p>
+                     </div>
+                  </div>
+                  <div class="col-12 d-flex align-items-start">
+                     <div class="text-dark d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                        <i class="fa-regular fa-envelope"></i>
+                     </div>
+                     <div>
+                        <h4>info@nephthyshouse.com</h4>
+                        <p>Ask anything you need ! </p>
+                     </div>
+                  </div>
+               </div>
+               </form>
+            </div>
+         </div>
+         <!-- footer -->
+         <div class="container">
+            <footer class=" border-top py-5">
+               <div class="row">
+                  <div class="col-6 col-md-2 mb-3">
+                     <h5>Section</h5>
+                     <ul class="nav flex-column">
+                        <li class="nav-item mb-2">
+                           <a href="#" class="nav-link p-0 text-muted">Home</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                           <a href="#" class="nav-link p-0 text-muted">Services</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                           <a href="#" class="nav-link p-0 text-muted">About Us</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                           <a href="#" class="nav-link p-0 text-muted">Contact Us</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                           <a href="#" class="nav-link p-0 text-muted">FAQs</a>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="col-6 col-md-2 mb-3">
+                     <h5>Employee</h5>
+                     <ul class="nav flex-column">
+                        <li class="nav-item mb-2">
+                           <a href="#" class="nav-link p-0 text-muted">Jobs by Specialization</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                           <a href="#" class="nav-link p-0 text-muted">Jobs by Company Name</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                           <a href="#" class="nav-link p-0 text-muted">Career Resources</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                           <a href="#" class="nav-link p-0 text-muted">Testimonials</a>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="col-6 col-md-2 mb-3">
+                     <h5>Company</h5>
+                     <ul class="nav flex-column">
+                        <li class="nav-item mb-2">
+                           <a href="#" class="nav-link p-0 text-muted">Post a Job Ad</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                           <a href="#" class="nav-link p-0 text-muted">Advertise With Us</a>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="col-md-5 offset-md-1 mb-3">
+                     <form>
+                        <h5>Subscribe to our newsletter</h5>
+                        <p>Monthly digest of what's new and exciting from us.</p>
+                        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                           <label for="newsletter1" class="visually-hidden">Email address</label>
+                           <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                           <button class="btn btn-primary" type="button">Subscribe</button>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+               <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                  <p>&copy; 2022 Asosiasi Bursa Kerja Indonesia, All rights reserved.</p>
+                  <ul class="list-unstyled d-flex">
+                     <li class="ms-3">
+                        <a class="link-dark" href="#">
+                           <i class="bi fa fa-instagram" width="24" height="24"></i>
+                        </a>
+                     </li>
+                     <li class="ms-3">
+                        <a class="link-dark" href="#">
+                           <i class="bi fa fa-twitter" width="24" height="24"></i>
+                        </a>
+                     </li>
+                     <li class="ms-3">
+                        <a class="link-dark" href="#">
+                           <i class="bi fa fa-facebook" width="24" height="24"></i>
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+            </footer>
+         </div>
+         <button onclick="topFunction()" id="myBtn" title="Go to top" class="fa fa-angle-double-up" aria-hidden="true"></button>
+         <script src="bootstrap/dist/js/bootstrap.js"></script>
+         <script src="bootstrap/dist/js/bootstrap.bundle.js"></script>
+         <Script src="bootstrap/dist/js/scrolltop.js"></Script>
+   </body>
+</html>

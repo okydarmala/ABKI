@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
+	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
+	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
+	<!ENTITY ns_vars "http://ns.adobe.com/Variables/1.0/">
+	<!ENTITY ns_imrep "http://ns.adobe.com/ImageReplacement/1.0/">
+	<!ENTITY ns_sfw "http://ns.adobe.com/SaveForWeb/1.0/">
+	<!ENTITY ns_custom "http://ns.adobe.com/GenericCustomNamespace/1.0/">
+	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
+]>
+<svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 226.77 226.77"
+	 style="enable-background:new 0 0 226.77 226.77;" xml:space="preserve">
+<metadata>
+	<sfw  xmlns="&ns_sfw;">
+		<slices></slices>
+		<sliceSourceBounds  bottomLeftOrigin="true" height="187.52" width="177.32" x="35.21" y="-197.88"></sliceSourceBounds>
+	</sfw>
+</metadata>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="35.7143" y1="104.1179" x2="212.0377" y2="104.1179">
+	<stop  offset="0.0222" style="stop-color:#EE4C9B"/>
+	<stop  offset="0.3534" style="stop-color:#5552A3"/>
+	<stop  offset="0.6441" style="stop-color:#248C99"/>
+	<stop  offset="0.8605" style="stop-color:#023F39"/>
+</linearGradient>
+<path style="fill:url(#SVGID_1_);stroke:#FFFFFF;stroke-miterlimit:10;" d="M38.07,111.75l47.28-89.17
+	c8.16-15.38,32.55-15.69,41.19-0.53l82.97,145.55c7.77,13.63-3.32,29.78-20.45,29.78H71.29c-21.93,0-31.36-24.82-13.97-36.74
+	l16.69-11.44c6.28-4.3,14.6-5.41,22.02-2.93l6.65,2.22c20.46,6.84,39.04-13.3,27.6-29.92l-3.14-4.55
+	c-9.47-13.74-32.18-12.78-40.15,1.71l-7.59,13.81c-1.39,2.53-3.36,4.78-5.77,6.61l0,0C54.8,150.39,27.51,131.67,38.07,111.75z"/>
+</svg>
